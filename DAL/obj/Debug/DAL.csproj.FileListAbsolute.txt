@@ -1,0 +1,9 @@
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\DAL\bin\Debug\DAL.dll.config
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\DAL\bin\Debug\DAL.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\DAL\bin\Debug\DAL.pdb
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\DAL\bin\Debug\EntityFramework.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\DAL\bin\Debug\EntityFramework.xml
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\DAL\obj\Debug\DAL.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\DAL\obj\Debug\DAL.pdb

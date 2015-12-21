@@ -1,0 +1,12 @@
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\bin\Debug\TestConsole.exe.config
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\bin\Debug\TestConsole.exe
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\bin\Debug\TestConsole.pdb
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\bin\Debug\DAL.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\bin\Debug\EntityFramework.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\bin\Debug\EntityFramework.SqlServer.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\bin\Debug\DAL.pdb
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\bin\Debug\EntityFramework.xml
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\bin\Debug\EntityFramework.SqlServer.xml
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\obj\Debug\TestConsole.exe
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\obj\Debug\TestConsole.pdb
