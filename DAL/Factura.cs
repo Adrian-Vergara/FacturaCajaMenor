@@ -10,11 +10,6 @@ namespace DAL
 {
     public class Factura
     {
-        public Factura()
-        {
-            this.Fecha = new DateTime();
-            this.Estado = "Activo";
-        }
 
         [Key]
         public int IdFactura { get; set; }
@@ -29,5 +24,6 @@ namespace DAL
         public int IdCliente { get; set; }
         [ForeignKey("IdCliente")]
         public virtual Cliente Cliente {get; set;} //Para establecer la relación de una factura con el Cliente
+        
     }
 }

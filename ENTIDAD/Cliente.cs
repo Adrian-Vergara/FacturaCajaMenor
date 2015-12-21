@@ -8,11 +8,16 @@ namespace ENTIDAD
 {
     public class ClienteDto
     {
+        public ClienteDto()
+        {
+            this.Estado = "Activo";
+        }
         public int IdCliente { get; set; }
         public int Cedula { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Tipo { get; set; }
         public string Estado { get; set; }
+        public int TotalFacturas { get; set; }
     }
 }

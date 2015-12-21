@@ -18,6 +18,21 @@ namespace FacturaCajaMenor.Controllers
             mCliente mCli = new mCliente();
             return mCli.Gets();
         }
+
+        [Route("")]
+        public ByARpt Registrar(ClienteDto Reg)
+        {
+            mCliente mCli = new mCliente();
+            return mCli.Insert(Reg);
+        }
+
+        [Route("{tipo}")]
+        public List<ClienteDto> Get(string tipo)
+        {
+            mCliente mCli = new mCliente();
+            return mCli.Get(tipo);
+        }
+
         //public List<PostDto> Gets()
         //{
         //    mPost omPost = new mPost();

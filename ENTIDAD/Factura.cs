@@ -8,6 +8,10 @@ namespace ENTIDAD
 {
     public class FacturaDto
     {
+        public FacturaDto()
+        {
+            this.Estado = "Activo";
+        }
         public int IdFactura { get; set; }
         public DateTime Fecha { get; set; }
         public string Concepto { get; set; }
@@ -16,5 +20,6 @@ namespace ENTIDAD
         
         public string Estado { get; set; }
         public int IdCliente { get; set; }
+        public string NombreCliente { get; set; }
     }
 }

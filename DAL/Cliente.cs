@@ -10,9 +10,8 @@ namespace DAL
 {
     public class Cliente
     {
-        public Cliente()
-        {
-            this.Estado = "Activo";
+        public Cliente() {
+            this.Facturas = new HashSet<Factura>();
         }
         [Key]
         public int IdCliente { get; set; }
@@ -27,6 +26,8 @@ namespace DAL
         public string Tipo { get; set; }
         [StringLength(10)]
         public string Estado { get; set; }
+        [NotMapped]
+        public int TotalFacturas { get { return Facturas.Count(); } }
         public ICollection<Factura> Facturas { get; set; }  //se pone para consultar todas las facturas de un cliente
     }
 }

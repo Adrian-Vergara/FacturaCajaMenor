@@ -16,6 +16,7 @@ using AutoMapper;namespace BLL
             Mapper.CreateMap<ClienteDto, Cliente>();
         }
 
+        //Consulta de todos los clientes
         public List<ClienteDto> Gets()
         {
             using(ctx = new Context())
@@ -25,6 +26,25 @@ using AutoMapper;namespace BLL
                 Mapper.Map(ListCliente, ListClienteDto);
                 return ListClienteDto;
             }
+        }
+
+        public List<ClienteDto> Get(string tipo)
+        {
+            using(ctx = new Context())
+            {
+                List<ClienteDto> ListClienteDto = new List<ClienteDto>();
+                List<Cliente> ListCliente = ctx.Clientes.Where(t => t.Tipo == tipo).OrderByDescending(t => t.IdCliente).ToList();
+                Mapper.Map(ListCliente, ListClienteDto);
+                return ListClienteDto;
+            }
+        }
+
+        //Insertar Datos
+        public ByARpt Insert(ClienteDto Registro)
+        {
+            cmdInsert Insert = new cmdInsert();
+            Insert.CliDto = Registro;
+            return Insert.Enviar();
         }
 
         class cmdInsert : absTemplate
