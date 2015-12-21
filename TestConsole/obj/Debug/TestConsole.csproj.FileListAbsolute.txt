@@ -10,3 +10,5 @@ D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\bin\Debug\EntityFramework.
 D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
 D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\obj\Debug\TestConsole.exe
 D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\obj\Debug\TestConsole.pdb
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\bin\Debug\AutoMapper.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\TestConsole\bin\Debug\AutoMapper.xml

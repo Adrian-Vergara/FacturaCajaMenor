@@ -7,7 +7,7 @@ using DAL;
 using ENTIDAD;
 using AutoMapper;namespace BLL
 {
-    class mCliente
+    public class mCliente
     {
         Context ctx;
         public mCliente()
@@ -30,51 +30,24 @@ using AutoMapper;namespace BLL
         class cmdInsert : absTemplate
         {
             public ClienteDto CliDto { get; set; }
-
             protected internal override bool esValido()
             {
                 if(CliDto.Nombre != "" && CliDto.Cedula != null && CliDto.Tipo != "")
                 {
                     return true;
                 }
+                byaRpt.Error = true;
+                byaRpt.Mensaje = "Los campos no pueden estar vacios!!";
                 return false;
             }
-        }
 
-        //class cmdInsert : absTemplate
-        //{
-        //    public ClienteDto oDto { get; set; }
-        //    protected internal override bool esValido()
-        //    {
-        //        if (oDto.Title != "" && oDto.Content != "")
-        //        {
-        //            Blogs Blog = ctx.Blogs.Where(t => t.BlogId == oDto.BlogId).FirstOrDefault();
-        //            if (Blog != null)
-        //            {
-        //                return true;
-        //            }
-        //            else
-        //            {
-        //                byaRpt.Error = true;
-        //                byaRpt.Mensaje = "El blog seleccionado no existe!!!";
-        //                return false;
-        //            }
-        //        }
-        //        else
-        //        {
-        //            byaRpt.Error = true;
-        //            byaRpt.Mensaje = "Los campos no pueden estar vacios!!";
-        //            return false;
-        //        }
-        //    }
-        //    protected internal override void Antes()
-        //    {
-        //        Posts Dto = new Posts();
-        //        Mapper.Map(oDto, Dto);
-        //        ctx.Posts.Add(Dto);
-        //    }
-        //}
-        
+            protected internal override void Antes()
+            {
+                Cliente Cli = new Cliente();
+                Mapper.Map(CliDto, Cli);
+                ctx.Clientes.Add(Cli);
+            }
+        }      
 
     }
 }

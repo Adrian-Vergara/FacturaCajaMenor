@@ -7,3 +7,4 @@ D:\AdrianVergara\ASP.NET\FacturaCajaMenor\DAL\bin\Debug\EntityFramework.xml
 D:\AdrianVergara\ASP.NET\FacturaCajaMenor\DAL\bin\Debug\EntityFramework.SqlServer.xml
 D:\AdrianVergara\ASP.NET\FacturaCajaMenor\DAL\obj\Debug\DAL.dll
 D:\AdrianVergara\ASP.NET\FacturaCajaMenor\DAL\obj\Debug\DAL.pdb
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

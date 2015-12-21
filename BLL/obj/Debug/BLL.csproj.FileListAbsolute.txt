@@ -1,0 +1,16 @@
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\bin\Debug\BLL.dll.config
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\bin\Debug\BLL.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\bin\Debug\BLL.pdb
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\bin\Debug\AutoMapper.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\bin\Debug\DAL.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\bin\Debug\ENTIDAD.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\bin\Debug\EntityFramework.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\bin\Debug\DAL.pdb
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\bin\Debug\ENTIDAD.pdb
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\bin\Debug\AutoMapper.xml
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\bin\Debug\EntityFramework.xml
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\obj\Debug\BLL.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\BLL\obj\Debug\BLL.pdb

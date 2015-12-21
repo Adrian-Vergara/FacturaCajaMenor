@@ -15,14 +15,20 @@ namespace TestConsole
             Context ctx;
             using (ctx = new Context())
             {
-                Cliente Cli = new Cliente();
-                Cli.Nombre = "Juancho";
-                Cli.Apellido = "Perez";
-                Cli.Cedula = 1783782;
-                Cli.Tipo = "Persona Natural";
-                ctx.Clientes.Add(Cli);
-                ctx.SaveChanges();
+                //List<ClienteDto> ListClienteDto = new List<ClienteDto>();
+                List<Cliente> ListCliente = ctx.Clientes.ToList();
+                ListCliente.ForEach(t => Console.WriteLine(t.Nombre));
+                //Mapper.Map(ListCliente, ListClienteDto);
+                //return ListClienteDto;
+                //Cliente Cli = new Cliente();
+                //Cli.Nombre = "Juancho";
+                //Cli.Apellido = "Perez";
+                //Cli.Cedula = 1783782;
+                //Cli.Tipo = "Persona Natural";
+                //ctx.Clientes.Add(Cli);
+                //ctx.SaveChanges();
             }
+            Console.ReadKey();
         }
     }
 }

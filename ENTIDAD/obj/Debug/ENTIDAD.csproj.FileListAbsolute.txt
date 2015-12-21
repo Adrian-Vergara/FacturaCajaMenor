@@ -1,0 +1,5 @@
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\ENTIDAD\bin\Debug\ENTIDAD.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\ENTIDAD\bin\Debug\ENTIDAD.pdb
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\ENTIDAD\obj\Debug\ENTIDAD.csprojResolveAssemblyReference.cache
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\ENTIDAD\obj\Debug\ENTIDAD.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\ENTIDAD\obj\Debug\ENTIDAD.pdb

@@ -44,3 +44,11 @@ D:\AdrianVergara\ASP.NET\FacturaCajaMenor\FacturaCajaMenor\bin\es\System.Web.Web
 D:\AdrianVergara\ASP.NET\FacturaCajaMenor\FacturaCajaMenor\obj\Debug\FacturaCajaMenor.csprojResolveAssemblyReference.cache
 D:\AdrianVergara\ASP.NET\FacturaCajaMenor\FacturaCajaMenor\obj\Debug\FacturaCajaMenor.dll
 D:\AdrianVergara\ASP.NET\FacturaCajaMenor\FacturaCajaMenor\obj\Debug\FacturaCajaMenor.pdb
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\FacturaCajaMenor\bin\BLL.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\FacturaCajaMenor\bin\ENTIDAD.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\FacturaCajaMenor\bin\DAL.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\FacturaCajaMenor\bin\AutoMapper.dll
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\FacturaCajaMenor\bin\BLL.pdb
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\FacturaCajaMenor\bin\ENTIDAD.pdb
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\FacturaCajaMenor\bin\DAL.pdb
+D:\AdrianVergara\ASP.NET\FacturaCajaMenor\FacturaCajaMenor\bin\AutoMapper.xml

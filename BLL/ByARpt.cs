@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    class ByARpt
+    public class ByARpt
     {
         public bool Error { get; set; }
         public string Mensaje { get; set; }
