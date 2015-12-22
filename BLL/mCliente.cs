@@ -22,7 +22,7 @@ using AutoMapper;namespace BLL
             using(ctx = new Context())
             {
                 List<ClienteDto> ListClienteDto = new List<ClienteDto>();
-                List<Cliente> ListCliente = ctx.Clientes.ToList();
+                List<Cliente> ListCliente = ctx.Clientes.Where(t=> t.Estado == "Activo").ToList();
                 Mapper.Map(ListCliente, ListClienteDto);
                 return ListClienteDto;
             }
@@ -33,7 +33,7 @@ using AutoMapper;namespace BLL
             using(ctx = new Context())
             {
                 List<ClienteDto> ListClienteDto = new List<ClienteDto>();
-                List<Cliente> ListCliente = ctx.Clientes.Where(t => t.Tipo == tipo).OrderByDescending(t => t.IdCliente).ToList();
+                List<Cliente> ListCliente = ctx.Clientes.Where(t => t.Tipo == tipo && t.Estado == "Activo").OrderByDescending(t => t.IdCliente).ToList();
                 Mapper.Map(ListCliente, ListClienteDto);
                 return ListClienteDto;
             }
@@ -52,7 +52,7 @@ using AutoMapper;namespace BLL
             public ClienteDto CliDto { get; set; }
             protected internal override bool esValido()
             {
-                if(CliDto.Nombre != "" && CliDto.Cedula != null && CliDto.Tipo != "")
+                if(CliDto.Nombre != "" && CliDto.Cedula != 0 && CliDto.Tipo != "")
                 {
                     return true;
                 }

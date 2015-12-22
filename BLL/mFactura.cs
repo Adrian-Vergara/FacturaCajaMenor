@@ -25,7 +25,7 @@ namespace BLL
             using(ctx = new Context())
             {
                 List<FacturaDto> ListFactDto = new List<FacturaDto>();
-                List<Factura> ListFact = ctx.Facturas.OrderByDescending(t=> t.IdFactura).ToList();
+                List<Factura> ListFact = ctx.Facturas.Where(t=> t.Estado == "Activo").OrderByDescending(t=> t.IdFactura).ToList();
                 Mapper.Map(ListFact, ListFactDto);
                 return ListFactDto;
             }
@@ -36,12 +36,59 @@ namespace BLL
             Insert.FactDto = Registro;
             return Insert.Enviar();
         }
+
+        public List<FacturaDto> Get(int idCliente)
+        {
+            using(ctx = new Context())
+            {
+                List<FacturaDto> ListFactDto = new List<FacturaDto>();
+                List<Factura> ListFact = ctx.Facturas.Where(t => t.IdCliente == idCliente && t.Estado == "Activo").OrderByDescending(t => t.IdFactura).ToList();
+                Mapper.Map(ListFact, ListFactDto);
+                return ListFactDto;
+            }
+        }
+
+        public ByARpt AnularFactura(int idFactura)
+        {
+            
+        }
+
+        class cmdUpdate : absTemplate
+        {
+            public FacturaDto FactDto { get; set; }
+            Factura Fact;
+            protected internal override bool esValido()
+            {
+                Fact = ctx.Facturas.Where(t => t.IdFactura == FactDto.IdFactura).FirstOrDefault();
+                if (Fact != null)
+                {
+                    return true;
+                }
+                else
+                {
+                    byaRpt.Error = true;
+                    byaRpt.Mensaje = "La Factura seleccionado no existe!!!";
+                    return false;
+                }
+            }
+
+            protected internal override void Antes()
+            {
+                Fact.Estado = "Inactivo";
+            }
+
+            protected override void Despues()
+            {
+                byaRpt.Mensaje = "Factura Anulada Exitosamente";
+            }
+            
+        }
         class cmdInsert : absTemplate
         {
             public FacturaDto FactDto { get; set; }
             protected internal override bool esValido()
             {
-                if (FactDto.Concepto != "" && FactDto.Valor != 0)
+                if (FactDto.Concepto != "" && FactDto.Valor != 0 && FactDto.ValorLetras != "")
                 {
                     Cliente Cli = ctx.Clientes.Where(t => t.IdCliente == FactDto.IdCliente).FirstOrDefault();
                     if (Cli != null)

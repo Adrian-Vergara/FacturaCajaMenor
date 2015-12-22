@@ -25,6 +25,13 @@ namespace FacturaCajaMenor.Controllers
             mFactura mFact = new mFactura();
             return mFact.Insert(registro);
         }
+
+        [Route("{idCliente}")]
+        public List<FacturaDto> Get(int idCliente)
+        {
+            mFactura mFact = new mFactura();
+            return mFact.Get(idCliente);
+        }
         
     }
 }
