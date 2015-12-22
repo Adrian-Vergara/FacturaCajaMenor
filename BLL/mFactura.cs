@@ -50,19 +50,30 @@ namespace BLL
 
         public ByARpt AnularFactura(int idFactura)
         {
-            
+            cmdUpdate cmd = new cmdUpdate();
+            cmd.FactId = idFactura;
+            return cmd.Enviar();
         }
 
         class cmdUpdate : absTemplate
         {
-            public FacturaDto FactDto { get; set; }
+            public int  FactId { get; set; }
             Factura Fact;
             protected internal override bool esValido()
             {
-                Fact = ctx.Facturas.Where(t => t.IdFactura == FactDto.IdFactura).FirstOrDefault();
+                Fact = ctx.Facturas.Where(t => t.IdFactura == FactId).FirstOrDefault();
                 if (Fact != null)
                 {
-                    return true;
+                    if(Fact.Estado != "Inactivo")
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        byaRpt.Error = true;
+                        byaRpt.Mensaje = "La Factura seleccionada ya fue anulada!!!";
+                        return false;
+                    }
                 }
                 else
                 {

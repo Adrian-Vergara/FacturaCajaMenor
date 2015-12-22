@@ -32,6 +32,14 @@ namespace FacturaCajaMenor.Controllers
             mFactura mFact = new mFactura();
             return mFact.Get(idCliente);
         }
+
+        [Route("{idFactura}")]
+        [AcceptVerbs("PUT")]
+        public ByARpt AnulcarFactura(int idFactura)
+        {
+            mFactura mFact = new mFactura();
+            return mFact.AnularFactura(idFactura);
+        }
         
     }
 }

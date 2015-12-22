@@ -27,7 +27,7 @@ namespace DAL
         [StringLength(10)]
         public string Estado { get; set; }
         [NotMapped]
-        public int TotalFacturas { get { return Facturas.Count(); } }
+        public int TotalFacturas { get { return Facturas.Count(t=> t.Estado == "Activo"); } }
         public virtual ICollection<Factura> Facturas { get; set; }  //se pone para consultar todas las facturas de un cliente
     }
 }
